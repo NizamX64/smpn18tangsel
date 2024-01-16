@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMPN 18 Tangerang Selatan</title>
+  <title>SMPN 18 Kota Tangerang Selatan</title>
   <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
 
   <!-- Styles -->
@@ -14,12 +14,12 @@
 </head>
 <body class="font-['Inter',_sans-serif] text-black min-h-[3000px]">
   <!-- Navbar Start -->
-  <nav class="nav flex justify-between items-center py-2 px-[7%] tablet:opacity-100 fixed top-0 left-0 right-0 bg-white">
+  <nav class="nav flex justify-between items-center py-2 px-[7%] tablet:opacity-100 fixed top-0 left-0 right-0 z-50">
     <a href="#" class="nav-logo flex">
       <img src="img/dellas.png" alt="SMPN 18 Tangerang Selatan" class="max-w-[80px] max-h-[80px]">
     </a>
 
-    <div class="nav-items tablet:absolute tablet:top-full tablet:-right-full tablet:bg-white tablet:w-[30rem] tablet:h-screen z-40">
+    <div class="nav-items tablet:absolute tablet:top-full tablet:-right-full tablet:w-[30rem] tablet:h-screen z-40 mix-blend-difference">
       <a href="#home" class="text-black inline-block text-xl my-0 mx-4 hover:text-primary tablet:text-bg tablet:block tablet:m-6 tablet:p-2 tablet:text-[2rem] laptop:text-2xl after:content-[''] after:block after:pb-2 after:border-b-[0.1rem] after:border-l-0 after:border-t-0 after:border-r-0 after:border-solid after:border-primary after:scale-x-0 after:transition after:duration-200 after:ease-linear hover:after:scale-x-50 tablet:after:origin-top-left tablet:hover:after:scale-x-[0.2]">Beranda</a>
       <a href="#about" class="text-black inline-block text-xl my-0 mx-4 hover:text-primary tablet:text-bg tablet:block tablet:m-6 tablet:p-2 tablet:text-[2rem] laptop:text-2xl after:content-[''] after:block after:pb-2 after:border-b-[0.1rem] after:border-l-0 after:border-t-0 after:border-r-0 after:border-solid after:border-primary after:scale-x-0 after:transition after:duration-200 after:ease-linear hover:after:scale-x-50 tablet:after:origin-top-left tablet:hover:after:scale-x-[0.2]">Info</a>
       <a href="#gallery" class="text-black inline-block text-xl my-0 mx-4 hover:text-primary tablet:text-bg tablet:block tablet:m-6 tablet:p-2 tablet:text-[2rem] laptop:text-2xl after:content-[''] after:block after:pb-2 after:border-b-[0.1rem] after:border-l-0 after:border-t-0 after:border-r-0 after:border-solid after:border-primary after:scale-x-0 after:transition after:duration-200 after:ease-linear hover:after:scale-x-50 tablet:after:origin-top-left tablet:hover:after:scale-x-[0.2]">Galeri</a>
@@ -29,19 +29,25 @@
     </div>
 
     <div class="nav-extra inline-block">
-      <a href="#" id="search" class="my-0 mx-2 hover:text-primary"><i data-feather="search" class="inline"></i></a>
-      <a href="#" id="hamburger-menu" class="my-0 mx-2 hover:text-primary hidden tablet:inline-block"><i data-feather="menu" class="inline"></i></a>
+      <a href="#" id="search" class="my-0 mx-2 text-black hover:text-primary mix-blend-difference"><i data-feather="search" class="inline"></i></a>
+      <a href="#" id="hamburger-menu" class="my-0 mx-2 text-black hover:text-primary hidden tablet:inline-block"><i data-feather="menu" class="inline"></i></a>
     </div>
   </nav>
   <!-- Navbar End -->
 
   <!-- Main content -->
-  <div class="main-content w-screen h-screen pt-40">
-    <h1 class="text-5xl font-bold">Lorem, ipsum.</h1>
-    <p class="text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam autem tempora eum eveniet nesciunt ex ducimus distinctio eaque minima ea!</p>
-    <br>
-    <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio voluptatum culpa ducimus eveniet tenetur rerum dolores fugiat voluptates nostrum tempora quam nesciunt corporis perferendis delectus aut, illo cumque debitis. Eum recusandae porro cum illum repudiandae facere ut, harum unde ipsam accusantium, quia optio vel quo consequatur quis fuga? Corporis?</p>
-  </div>
+  <main class="main-content">
+    <!-- Hero Section Start -->
+    <div class="backdrop top-0 left-0 right-0 min-h-screen absolute z-40 hidden"></div>
+    <section class="hero min-h-screen flex items-center bg-[url('../img/thumbnail.jpg')] bg-no-repeat bg-cover bg-center text-white after:content-[''] after:block after:absolute after:w-full after:h-[30%] after:bottom-0 after:bg-[linear-gradient(0deg,_rgba(255,_255,_255,_1)_8%,_rgba(255,_255,_255,_0)_50%)]" id="home">
+      <main class="content py-2 px-[7%] max-w-[60rem]">
+        <h1 class="text-[5em] text-white font-bold">SMPN 18 Kota Tangerang Selatan</h1>
+        <p class="text-2xl mt-4 leading-[1.4] font-thin">Mewujudkan lulusan berkarakter, berkompeten, religius, serta berwawasan lingkungan.</p>
+        <a href="#signup" class="cta mt-4 inline-block py-4 px-12 text-2xl text-white bg-primary rounded-xl cursor-pointer">Daftar Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+  </main>
 
   <!-- Feather Icon Configuration -->
   <script>feather.replace();</script>
