@@ -1,0 +1,9 @@
+The Navbar consists of multiple items:
+1. Beranda
+2. Info
+  - Artikel
+  - Profil Guru
+  - Ekstrakurikuler
+3. Galeri
+4. Event
+5. Kontak

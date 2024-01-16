@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+nav.nav.scrolled {
+  @apply bg-transparent;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    transition: 0.3s;
+  }
+
+  .nav-items.active {
+    @apply right-0;
+    border-left: 1px solid rgba(0, 0, 0, 0.5); 
+  }
+
+  nav.nav-opened {
+    @apply bg-white
+  }
+
+  .main-content.backdrop {
+    @apply bg-black bg-opacity-50;
+  }
+}
