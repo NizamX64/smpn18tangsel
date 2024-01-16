@@ -2693,12 +2693,21 @@ section.hero main.content a.cta {
     padding: 0.5rem;
   }
 
+  .tablet\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .tablet\:text-\[2rem\] {
     font-size: 2rem;
   }
 
   .tablet\:text-\[62\.5\%\] {
     font-size: 62.5%;
+  }
+
+  .tablet\:font-light {
+    font-weight: 300;
   }
 
   .tablet\:opacity-100 {
