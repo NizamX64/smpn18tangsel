@@ -24,5 +24,6 @@ hamburger.onclick = () => {
 document.addEventListener('click', (e) => {
   if(!hamburger.contains(e.target) && !navItems.contains(e.target)) {
     navItems.classList.remove("active");
+    backdrop.classList.remove("backdrop");
   }
 });
